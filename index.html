@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abdellah Boubker — Data Engineer & IA Developer</title>
+  <meta name="description" content="Portfolio d'Abdellah Boubker — Alternance Data, IA (RAG/LLM) & Automation. Projets concrets ETL, Scikit-learn et Développement Fullstack." />
+  <link rel="icon" type="image/png" href="./assets/images/logo.PNG" />
+
+  <meta property="og:title" content="Abdellah Boubker — Data & IA Portfolio">
+  <meta property="og:description" content="Développeur d'Agents IA et Data Engineer. Découvrez mes projets ETL, ML et Automation.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/images/project-1.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  
+  <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RR8NFVVFZV"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RR8NFVVFZV');
+    </script>
+</head>
+<body>
+
+  <div class="highlight-cursor" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#home" class="logo" aria-label="Accueil — Abdellah Boubker">Abdellah<span>B.</span></a>
+
+      <div class="navbar">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+        <nav aria-label="Navigation principale">
+          <ul class="nav-list" id="nav-list">
+            <li><a href="#about" class="nav-link">Profil</a></li>
+            <li><a href="#focus" class="nav-link">Focus</a></li>
+            <li><a href="#projects" class="nav-link">Projets</a></li>
+            <li><a href="#resume" class="nav-link">Parcours</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-label="Présentation">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-subtitle">Alternance 2026 • <strong>3 sem. Entreprise / 1 sem. École</strong></span>
+          <h1 class="hero-title">
+            Abdellah <span class="text-gradient">Boubker</span>
+          </h1>
+          <p class="hero-description">
+            <strong>Data Engineer & Développeur d'Agents IA.</strong>
+            Je ne me contente pas de coder : je construis des pipelines de données fiables et j'automatise vos processus métiers grâce à l'Intelligence Artificielle.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="button button-primary" aria-label="Voir mes projets">
+              <ion-icon name="code-working-outline" aria-hidden="true"></ion-icon>
+              <span>Voir mes réalisations</span>
+            </a>
+            <a href="./assets/Abdellah_Boubker_CV.pdf" class="button button-outline" aria-label="Télécharger mon CV" download>
+              <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
+              <span>Télécharger CV</span>
+            </a>
+          </div>
+
+          <div class="hero-badges" role="list" aria-label="Compétences clés">
+            <span class="badge" role="listitem">GenAI</span>
+            <span class="badge" role="listitem">Data Engineering</span>
+            <span class="badge" role="listitem">Web Scraping</span>
+            <span class="badge" role="listitem">Automation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-label="À propos">
+      <div class="container">
+        <h2 class="section-title reveal">À propos</h2>
+
+        <div class="grid about-grid">
+          <div class="about-content reveal">
+            <h3>Mon profil</h3>
+            <div class="about-text">
+              <p>Étudiant en 3ème année de Bachelor IA & Big Data à l'ESGI Paris. Mon approche est pragmatique : une technologie n'a de valeur que si elle résout un problème réel.</p>
+              
+              <p>Pourquoi mon profil est hybride ?</p>
+              <ul>
+                <li>🤖 <strong>IA & LLM :</strong> Je sais connecter vos données à des modèles d'intelligence artificielle pour créer des assistants utiles.</li>
+                <li>⚙️ <strong>Data Engineering :</strong> Je maîtrise la collecte (Scraping), le nettoyage et le stockage de la donnée. Pas d'IA fiable sans données propres.</li>
+                <li>🚀 <strong>Automation :</strong> Je connecte vos outils (API, n8n) pour supprimer les tâches manuelles répétitives.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div id="avatar-3d-container" class="reveal" aria-hidden="true">
+             </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="section" id="focus" aria-label="Domaines de focus">
+      <div class="container">
+        <h2 class="section-title reveal">Mon Expertise</h2>
+        <div class="services-grid">
+          
+          <article class="service-card reveal reveal-delay-1">
+            <h3 class="service-title">IA & LLM (GenAI)</h3>
+            <p class="service-text">
+              Développement d'agents conversationnels intelligents.
+              <br><strong>Stack :</strong> OpenAI API, LangChain, Prompt Engineering.
+            </p>
+          </article>
+
+          <article class="service-card reveal reveal-delay-2">
+            <h3 class="service-title">Data Engineering</h3>
+            <p class="service-text">
+              Extraction et structuration de données complexes.
+              <br><strong>Stack :</strong> Python (Pandas/Numpy), Web Scraping (Selenium), Pipelines ETL, SQL.
+            </p>
+          </article>
+
+          <article class="service-card reveal reveal-delay-3">
+            <h3 class="service-title">Automation & No-Code</h3>
+            <p class="service-text">
+              Interconnexion d'API pour automatiser les flux métiers.
+              <br><strong>Outils :</strong> n8n, Make, Webhooks, API REST.
+            </p>
+          </article>
+
+          <article class="service-card reveal reveal-delay-4">
+            <h3 class="service-title">Développement Web</h3>
+            <p class="service-text">
+              Intégration des solutions IA dans des interfaces robustes.
+              <br><strong>Stack :</strong> PHP/Symfony, Architecture MVC, Git.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-label="Projets">
+      <div class="container">
+        <h2 class="section-title reveal">Projets Réalisés</h2>
+        <p class="section-intro reveal">Des réalisations concrètes prouvant ma capacité à livrer du code fonctionnel et documenté.</p>
+
+        <div class="portfolio-filters reveal" role="tablist" aria-label="Filtrer les projets">
+          <button class="portfolio-filter active" data-filter="all" role="tab" aria-selected="true">Tous</button>
+          <button class="portfolio-filter" data-filter="data" role="tab">Data & IA</button>
+          <button class="portfolio-filter" data-filter="web" role="tab">Web & SQL</button>
+          <button class="portfolio-filter" data-filter="software" role="tab">Logiciel </button>
+        </div>
+
+        <div class="portfolio-grid">
+          
+          <article class="portfolio-card reveal reveal-delay-1" data-category="data">
+            <div class="portfolio-image">
+              <img src="./assets/images/pipelines.jpg" alt="Pipeline ETL Python" loading="lazy">
+              <div class="portfolio-overlay">
+                <div class="portfolio-icon"><ion-icon name="git-network-outline"></ion-icon></div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Pipeline ETL & Web Scraping</h3>
+              <div class="portfolio-category">Data Engineering • Automation</div>
+              <p class="project-desc">Script autonome d'extraction de données web non structurées, nettoyage automatique et insertion en base SQL.</p>
+              <ul class="kpi-list">
+                <li>🕷️ <strong>Scraping :</strong> Selenium </li>
+                <li>🧹 <strong>Cleaning :</strong> Pandas (Data standardisation)</li>
+                <li>💾 <strong>Stockage :</strong> MySQL</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal reveal-delay-2" data-category="data">
+            <div class="portfolio-image">
+              <img src="./assets/images/deep.jpg" alt="Machine Learning" loading="lazy"> 
+              <div class="portfolio-overlay">
+                <div class="portfolio-icon"><ion-icon name="stats-chart-outline"></ion-icon></div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Modèle Prédictif (ML)</h3>
+              <div class="portfolio-category">Machine Learning • Python</div>
+              <p class="project-desc">Analyse exploratoire (EDA) et comparaison d'algorithmes pour prédire des résultats sur un dataset complexe.</p>
+              <ul class="kpi-list">
+                <li>📊 <strong>Viz :</strong> Matplotlib / Seaborn</li>
+                <li>🎯 <strong>KPI :</strong> Maximisation de la précision</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal reveal-delay-3" data-category="web">
+            <div class="portfolio-image">
+              <img src="./assets/images/project-1.png" alt="E-commerce SQL" loading="lazy">
+              <div class="portfolio-overlay">
+                <div class="portfolio-icon"><ion-icon name="cart-outline"></ion-icon></div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Site E-commerce & Architecture</h3>
+              <div class="portfolio-category">Web • SQL • MVC</div>
+              <p class="project-desc">Conception complète d'une plateforme de vente avec une modélisation de données (MCD/MLD) optimisée.</p>
+              <ul class="kpi-list">
+                <li>⚡ <strong>SQL :</strong> Requêtes optimisées</li>
+                <li>🛡️ <strong>Sécurité :</strong> Structure MVC & Auth</li>
+                <li>📦 Gestion commandes & Clients</li>
+              </ul>
+            </div>
+          </article>
+
+           <article class="portfolio-card reveal reveal-delay-4" data-category="software">
+            <div class="portfolio-image">
+              <img src="./assets/images/project-5.jpg" alt="Projet C" loading="lazy">
+              <div class="portfolio-overlay">
+                <div class="portfolio-icon"><ion-icon name="terminal-outline"></ion-icon></div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Moteur de Simulation (C)</h3>
+              <div class="portfolio-category">Génie Logiciel • Bas niveau</div>
+              <p class="project-desc">Preuve de rigueur algorithmique : gestion manuelle de la mémoire et persistance des données sans fuite.</p>
+              <ul class="kpi-list">
+                <li>🧠 <strong>Algo :</strong> Gestion mémoire stricte</li>
+                <li>⚙️ 0 Fuite mémoire (Valgrind)</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tech-stack" aria-label="Technologies">
+      <div class="container">
+        <h2 class="section-title reveal">Technologies & Outils</h2>
+        <div class="tech-grid">
+           <div class="tech-card reveal reveal-delay-1">
+             <div class="tech-name">Python 🐍</div>
+             <small>Pandas, API</small>
+          </div>
+          <div class="tech-card reveal reveal-delay-2">
+            <div class="tech-name">SQL 🗄️</div>
+            <small>MySQL, Modeling</small>
+          </div>
+          <div class="tech-card reveal reveal-delay-2">
+            <div class="tech-name">IA / LLM 🤖</div>
+            <small>OpenAI, LangChain</small>
+          </div>
+          <div class="tech-card reveal reveal-delay-3">
+            <div class="tech-name">Automation ⚡</div>
+            <small>n8n, Make</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resume" aria-label="CV">
+      <div class="container">
+        <h2 class="section-title reveal">Mon Parcours</h2>
+
+        <div class="resume-grid">
+          <div class="timeline-column reveal reveal-delay-1">
+            <div class="timeline-heading">
+              <div class="timeline-icon"><ion-icon name="briefcase-outline"></ion-icon></div>
+              <h3 class="timeline-title">Expériences Pro</h3>
+            </div>
+
+            <div class="timeline-list">
+              <div class="timeline-item">
+                <h4 class="timeline-item-title">Développeur Fullstack & Data</h4>
+                <span class="timeline-period">Soutien++ | Juin 2025 — Août 2025</span>
+                <p class="timeline-text">
+                  <strong>Objectif :</strong> Améliorer la visibilité sur l'usage de l'application.
+                  <br>• Extraction et nettoyage de données utilisateurs (Pandas).
+                  <br>• Création de tableaux de bord KPI (Matplotlib).
+                  <br>• Maintenance évolutive de l'application Symfony.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <h4 class="timeline-item-title">Jobs Étudiants & Polyvalence</h4>
+                <span class="timeline-period">2023 — 2025</span>
+                <p class="timeline-text">
+                  Expériences variées développant ma rigueur, ma ponctualité et ma capacité à résoudre des problèmes sous pression (Soft Skills).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-column reveal reveal-delay-2">
+            <div class="timeline-heading">
+              <div class="timeline-icon"><ion-icon name="school-outline"></ion-icon></div>
+              <h3 class="timeline-title">Formation</h3>
+            </div>
+
+            <div class="timeline-list">
+              <div class="timeline-item">
+                <h4 class="timeline-item-title">Bachelor IA & Big Data</h4>
+                <span class="timeline-period">ESGI Paris | 2025 — 2026 (En cours)</span>
+                <p class="timeline-text">Spécialisation en Data Science, Machine Learning et architecture Big Data.</p>
+              </div>
+              <div class="timeline-item">
+                <h4 class="timeline-item-title">Classes Préparatoires Informatique</h4>
+                <span class="timeline-period">Groupe 3iL | 2023 — 2025</span>
+                <p class="timeline-text">Bases solides en algorithmique, mathématiques et développement logiciel.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOBBIES -->
+<section class="section" id="hobbies" aria-label="Centres d'intérêt">
+  <div class="container">
+    <h2 class="section-title reveal">Hobbies</h2>
+
+    <p class="section-intro reveal">
+      En dehors du code, j’aime entretenir un équilibre entre corps et esprit.  
+      Ces passions m’aident à rester curieux, discipliné et concentré.
+    </p>
+
+    <div class="hobbies-grid">
+      <div class="hobby-card reveal reveal-delay-1">
+        <div class="hobby-icon"><ion-icon name="barbell-outline"></ion-icon></div>
+        <h3 class="hobby-title">Sport & Nutrition</h3>
+        <p class="hobby-text">
+          Je pratique la musculation et je m’intéresse à la nutrition — optimiser ses performances passe aussi par la santé physique et mentale.
+        </p>
+      </div>
+
+      <div class="hobby-card reveal reveal-delay-2">
+        <div class="hobby-icon"><ion-icon name="tennisball-outline"></ion-icon></div>
+        <h3 class="hobby-title">Volleyball</h3>
+        <p class="hobby-text">
+          Sport d’équipe qui m’a appris la communication, la confiance et la stratégie collective.
+        </p>
+      </div>
+
+      <div class="hobby-card reveal reveal-delay-3">
+        <div class="hobby-icon"><ion-icon name="planet-outline"></ion-icon></div>
+        <h3 class="hobby-title">Astronomie</h3>
+        <p class="hobby-text">
+          Observer le ciel me rappelle qu’il y a toujours plus à explorer — dans l’univers, comme en data.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="section" id="contact" aria-label="Contact">
+      <div class="container">
+        <h2 class="section-title reveal">Contact</h2>
+        <div class="contact-grid">
+          <div class="contact-info reveal reveal-delay-1">
+            <div class="contact-card">
+              <div class="contact-icon"><ion-icon name="mail-outline"></ion-icon></div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <div class="contact-value"><a href="mailto:contact@boubkera.dev">contact@boubkera.dev</a></div>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon"><ion-icon name="call-outline"></ion-icon></div>
+              <div class="contact-details">
+                <h4>Téléphone</h4>
+                <div class="contact-value"><a href="tel:+33744895598">07 44 89 55 98</a></div>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon"><ion-icon name="location-outline"></ion-icon></div>
+              <div class="contact-details">
+                <h4>Localisation</h4>
+                <div class="contact-value">Paris, Île-de-France (Mobile)</div>
+              </div>
+            </div>
+            
+            <div class="social-links-large">
+                <a href="https://www.linkedin.com/in/abdellah-boubker" target="_blank" class="social-btn linkedin">
+                    <ion-icon name="logo-linkedin"></ion-icon> LinkedIn
+                </a>
+                <a href="https://github.com/boubkera" target="_blank" class="social-btn github">
+                    <ion-icon name="logo-github"></ion-icon> GitHub
+                </a>
+            </div>
+          </div>
+
+    
+
+          <div class="contact-form-container reveal reveal-delay-2">
+            <form action="https://formspree.io/f/xzzeyabj" method="POST" class="contact-form" id="contact-form">
+              <h3>Envoyer un message</h3>
+              <div class="form-group">
+                <input type="text" id="name" name="name" class="form-control" placeholder="Votre Nom" required>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" class="form-control" placeholder="Votre Email" required>
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" class="form-control" placeholder="Bonjour, votre profil Data & IA nous intéresse..." rows="5" required></textarea>
+              </div>
+              <button type="submit" class="button button-primary">
+                <ion-icon name="paper-plane-outline"></ion-icon>
+                <span>Envoyer</span>
+              </button>
+            </form>
+            
+            <div id="form-success" class="success-message" role="status" aria-live="polite">
+              <div class="success-icon"><ion-icon name="checkmark-outline"></ion-icon></div>
+              <h3 class="success-title">Message envoyé !</h3>
+              <p class="success-text">Merci pour votre message. Je réponds rapidement.</p>
+              <div class="success-animation"></div>
+            </div>
+            
+            
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-map" aria-hidden="true">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.94722687565!2d2.277019615234378!3d48.85893799573506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b411%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2sfr!4v1732800000000!5m2!1sfr!2sfr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-logo">Abdellah<span>B.</span></div>
+          <div class="footer-text">© 2025 - Portfolio Alternance Data & IA</div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a>
+          <a href="#" class="social-link"><ion-icon name="logo-github"></ion-icon></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <script src="./assets/js/letter-animation.js"></script>
+  <script src="./assets/js/starfield-background.js"></script>
+  <script src="./assets/js/script.js"></script>
+  
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Abdellah Boubker",
+    "jobTitle":"Alternant Data / IA / Automation / Testing",
+    "email":"mailto:contact@boubkera.dev",
+    "url":"https://boubkera.dev"
+  }
+  </script>
+
+</body>
+</html>
