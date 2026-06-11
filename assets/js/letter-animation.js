@@ -1,6 +1,7 @@
 /*
  * Copyright © 2025 Abdellah Boubker
  * All rights reserved.
+ * Lettres 3D "AB" — couleurs alignées avec le thème indigo/violet
  */
 
 class LetterAnimation {
@@ -18,7 +19,10 @@ class LetterAnimation {
     this.container.style.border = 'none';
 
     this.config = {
-      colors: { letterColor: 0x60a5fa, letterGlow: 0x93c5fd },
+      colors: {
+        letterColor: 0x818cf8,  // indigo clair — aligné avec --color-primary-alt
+        letterGlow: 0xa78bfa    // violet doux — aligné avec --color-violet
+      },
       letterSize: 0.9,
       scrollSpeed: 0.2
     };
@@ -76,7 +80,8 @@ class LetterAnimation {
     this.scene.add(frontLight);
     this.objects.frontLight = frontLight;
 
-    const backLight = new THREE.PointLight(this.config.colors.letterGlow, 2, 10);
+    // Lumière arrière cyan pour la profondeur (rappel du thème)
+    const backLight = new THREE.PointLight(0x22d3ee, 2, 10);
     backLight.position.set(-2, -1, 2);
     this.scene.add(backLight);
     this.objects.backLight = backLight;
@@ -114,7 +119,11 @@ class LetterAnimation {
       this.objects.letter = mesh;
 
       const edges = new THREE.EdgesGeometry(textGeometry);
-      const lineMaterial = new THREE.LineBasicMaterial({ color: this.config.colors.letterGlow, transparent: true, opacity: 0.55 });
+      const lineMaterial = new THREE.LineBasicMaterial({
+        color: 0x22d3ee,           // contour cyan
+        transparent: true,
+        opacity: 0.45
+      });
       const wireframe = new THREE.LineSegments(edges, lineMaterial);
       this.scene.add(wireframe);
       this.objects.wireframe = wireframe;
